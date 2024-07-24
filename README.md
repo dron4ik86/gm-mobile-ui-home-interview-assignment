@@ -106,6 +106,15 @@ such as their IDs, classes, and other attributes, which are crucial for writing 
    ```
    To get the `deviceName` you can open the terminal and enter this command `adb devices`
    and in the 'List of devices attached' you will see the device name.
+20. Please update the `.env.template` file with your own secret values and rename it to `.env`.
+
+### Usage
+1. Run tests via behave
+   ```
+    behave -D platform=android -D device_id=R5CT71Y78DJ -D app_path=/path/to/app.apk " "-D execution_mode=local"
+   ```
+ 
+
 
 
 ## Troubleshooting
